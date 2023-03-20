@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form action="login.php" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<a>
+				<button class="sumbit">
+                        <span class="btnText"><a href="profile.html">Login</a></span>
+                        <i class="uil uil-navigator"></i>
+                </button>
+			</a>
+		</form>
+		<p>Don't have an account? <a href="register.html">Register</a></p>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+  }
+  
+  header {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1rem;
+  }
+  
+  h1 {
+	font-size: 2rem;
+	text-align: center;
+  }
+  
+  main {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(141, 100, 198, 0.662);
+	
+  }
+  
+  form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .form-group {
+	flex-basis: 100%;
+	margin-bottom: 1rem;
+	width: 50%;
+	height:20%;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea,
+  select {
+	/* width: 100%;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 1rem; */
+
+	margin: 0 auto; 
+  	border: 2px solid #73AD21; /* Add a 2px green border */
+    border-radius: 5px; /* Add a 25px border radius */
+    padding: 10px; /* Add some padding to the input */
+    margin-bottom: 10px; /* Add some margin below the input */
+    width: 90%; /* Set the width to 100% to fill the container */
+    box-sizing: border-box; /* Include the border in the width calculation */
+
+  }
+  
+  select {
+	appearance: none;
+	padding: 0.5rem 2rem 0.5rem 0.5rem;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M2 7l8 8 8-8' fill='%23333333'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 0.5rem center;
+	background-size: 1.5em;
+  }
+  
+  input[type="checkbox"] {
+	margin-right: 0.5rem;
+	transform: translateY(2px);
+  }
+  
+  button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #555;
+  }
+  
+  @media screen and (min-width: 600px) {
+	.form-group {
+	  flex-basis: calc(50% - 0.5rem);
+	}
+  }
+  
